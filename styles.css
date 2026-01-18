@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.font-Inter {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.nav-upperContent {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    background-color: #412567;
+}
+
+.Title {
+    font-size: 1.2em;
+     margin-top: 1.2em;
+    margin-bottom: 1.2em;
+
+    color: white;
+}
+
+.nav-upperContent .linear-gradient {
+    
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+}
+
+.nav-upperContent .nav-link {
+    display: flex;
+    color: white;
+    font-size: 1.1em;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+    
+}
+.btn1{
+    font-size: 1em;
+    background-color: pink;
+    background-image: url("./assets/Vector.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+    border-radius: 2em;
+    margin-top: 1.2em;
+    margin-right: 10.5em;
+    margin-bottom: 1.2em;
+    padding: 0.8em;
+    border: none;
+}
