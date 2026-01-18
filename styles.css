@@ -17,7 +17,7 @@
     padding-left: 10.5em;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-    background-color: #412567;
+    background-color: #1a0d2e;
 }
 
 .Title {
@@ -30,7 +30,7 @@
 
 .nav-upperContent .linear-gradient {
     
-    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
 }
 
 .nav-upperContent .nav-link {
@@ -43,17 +43,98 @@
     gap: 1em;
     
 }
+.btn1 img{
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
 .btn1{
     font-size: 1em;
-    background-color: pink;
-    background-image: url("./assets/Vector.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 20px;
+    background-position: 1.2em;
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     border-radius: 2em;
     margin-top: 1.2em;
     margin-right: 10.5em;
     margin-bottom: 1.2em;
     padding: 0.8em;
     border: none;
+
+}
+
+/* ===============================banner1================================= */
+.banner1{
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    /* background-position: center;  */
+    background-repeat: no-repeat;
+    min-height: 600px; /* Adjust based on your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+.hero-circle{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* min-height: 200px; */
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+.banner-content{
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 4em;
+    font-weight: bold;
+}
+.banner-content p{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight : 50;
+}
+.banner-content .banner1-btn{
+     margin-top: 1em;
+     margin-bottom: 2em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap : 10px;
+     
+}
+.banner1-btn img{
+    margin-right: 5px;
+    vertical-align: middle;
+
+}
+
+.banner1-btn .banner1-btn1{
+    background-position: 1.2em;
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    padding: 12px 20px 12px;
+    border-radius: 5em;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    
+}
+.banner1-btn .banner1-btn2{
+    background-image: url("./assets/message.png");
+   
+    background-repeat: no-repeat;
+    background-position: 1.2em;
+    padding: 12px 20px 12px 48px;
+    border-radius: 5em;
+    border-color: #00ff88;
+    background-color: transparent;
+    font-size: 1em;
+    color:#00ff88 ;
 }
