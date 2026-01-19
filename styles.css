@@ -22,14 +22,14 @@
 
 .Title {
     font-size: 1.2em;
-     margin-top: 1.2em;
+    margin-top: 1.2em;
     margin-bottom: 1.2em;
 
     color: white;
 }
 
 .nav-upperContent .linear-gradient {
-    
+
     background-image: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     color: transparent;
     background-clip: text;
@@ -44,14 +44,16 @@
     align-items: center;
     gap: 1em;
     margin-right: 1.4em;
-    
+
 }
-.btn1 img{
+
+.btn1 img {
     margin-left: 10px;
     vertical-align: middle;
-    
+
 }
-.btn1{
+
+.btn1 {
     font-size: 1em;
     background-position: 1.2em;
     background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
@@ -65,19 +67,21 @@
 }
 
 /* ===============================banner1================================= */
-.banner1{
+.banner1 {
     background-image: url("./assets/hero-bg.png");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
-    min-height: 600px; /* Adjust based on your design */
+    min-height: 600px;
+    /* Adjust based on your design */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin: 0 auto;
 }
-.hero-circle{
+
+.hero-circle {
     /* background-image: url("./assets/microphone.png"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -85,8 +89,25 @@
     /* min-height: 200px; */
     margin-top: 5em;
     margin-bottom: 2em;
+    position: relative;
+    z-index: 5;
+    top: 10px;
 }
-.banner-content{
+
+.hero-circle .hero-circle-badge {
+    position: absolute;
+    top: 5px;
+    left: 330px;
+    z-index: 6;
+}
+.hero-circle .hero-circle-microphone {
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    z-index: 7;
+}
+
+.banner-content {
     background-repeat: no-repeat;
     background-position: top;
     color: white;
@@ -94,31 +115,35 @@
     align-items: center;
     text-align: center;
 }
-.banner-content h1{
+
+.banner-content h1 {
     font-size: 4em;
     font-weight: bold;
 }
-.banner-content p{
+
+.banner-content p {
     margin-top: 1em;
     font-size: 1em;
-    font-weight : 50;
+    font-weight: 50;
 }
-.banner-content .banner1-btn{
-     margin-top: 1em;
-     margin-bottom: 8em;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap : 10px;
-     
+
+.banner-content .banner1-btn {
+    margin-top: 1em;
+    margin-bottom: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
 }
-.banner1-btn img{
+
+.banner1-btn img {
     margin-right: 5px;
     vertical-align: middle;
 
 }
 
-.banner1-btn .banner1-btn1{
+.banner1-btn .banner1-btn1 {
     background-position: 1.2em;
     background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     padding: 12px 20px 12px;
@@ -127,17 +152,17 @@
     font-size: 1em;
     font-weight: bold;
     color: white;
-    
+
 }
 
-.banner1-btn .banner1-btn2{
-    padding: 12px 20px 12px ;
+.banner1-btn .banner1-btn2 {
+    padding: 12px 20px 12px;
     border-radius: 5em;
     border-color: #00ff88;
     background-color: transparent;
     font-size: 1.2em;
     font-weight: bold;
-    color:#00ff88 ;
+    color: #00ff88;
     background-image: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     color: transparent;
     background-clip: text;
@@ -146,15 +171,17 @@
 
 /* =================================banner2==================================== */
 
-.banner2{
+.banner2 {
     background-color: #1a0d2e;
-    
+
 }
-.banner2-content h1{
+
+.banner2-content h1 {
     font-size: 48px;
     margin-bottom: 16px;
     color: white;
 }
+
 .banner2-content p {
     margin-bottom: 1em;
     font-weight: lighter;
@@ -162,12 +189,14 @@
     color: white;
 
 }
-.banner2-content{
 
-    margin : 0em 12.5em 0em 12.5em;
+.banner2-content {
+
+    margin: 0em 12.5em 4em 12.5em;
     text-align: center;
 }
-.banner2-achivements{
+
+.banner2-achivements {
     padding: 5em 5em;
     display: flex;
     justify-content: space-around;
@@ -178,13 +207,14 @@
     margin: 0 auto;
 }
 
-.banner2-achivements h1{
+.banner2-achivements h1 {
 
     font-size: 48px;
     color: #00ff88;
 }
-.banner2-achivements p{
-    color :white;
+
+.banner2-achivements p {
+    color: white;
 }
 
 
@@ -196,7 +226,7 @@
     background-clip: text;
 }
 
-.footer{
+.footer {
     background-image: url("./assets/footer-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,28 +236,32 @@
     justify-content: center;
     align-items: center;
 }
-.footer-title h1{
+
+.footer-title h1 {
     font-size: 5em;
     text-align: center;
     color: white;
 
 
 }
+
 .links li {
     margin-top: 1em;
     display: flex;
     align-items: center;
-    gap: 0.6em; 
+    gap: 0.6em;
 }
-.footer .footer-links .links{
+
+.footer .footer-links .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    gap : 3em;
+    gap: 3em;
     color: white;
 }
-.footer p{
+
+.footer p {
     margin-top: 2em;
     text-align: center;
     color: white;
