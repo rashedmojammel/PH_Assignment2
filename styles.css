@@ -49,6 +49,7 @@
 .btn1 img {
     margin-left: 10px;
     vertical-align: middle;
+    padding: 0;
 
 }
 
@@ -137,6 +138,7 @@
 .banner1-btn img {
     margin-right: 5px;
     vertical-align: middle;
+    padding: 0;
 
 }
 
@@ -234,7 +236,7 @@
 
     display: grid;
     /* border: 1px solid; */
-    gap : 1em;
+    gap : 1.5em;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(3 , auto);
     margin: 4em 12em 4em 12em;
@@ -277,7 +279,75 @@
 .big-horizontal-layout p,
 .normal-layout p {
     font-weight: lighter;
-    padding-top: 5px;
+    
+}
+.big-vertical-layout h3,
+.big-horizontal-layout h3,
+.normal-layout h3{
+   padding-bottom: 5px ;
+
+}
+/* ===========================Song============================== */
+
+.song
+{
+    background-color: #230E3D;
+    border: 1px solid;
+}
+ .title{
+    margin-top: 4em;
+    text-align: center;
+    font-size: 1.5em;
+    text-spacing-trim: trim-start;
+    color: white;
+
+}
+.card iframe{
+    width: 100%;
+    height: 12em;
+    border-radius: 15px;
+    border: none;
+
+}
+.song-playlist{
+    margin: 2em 12em 8em 12em;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 1em;
+}
+.card
+{
+    background-color: #250D44;
+    padding: 2px;
+    border-radius: 15px;
+    padding-bottom: 1.2em;
+}
+.card h2,p{
+    color: white;
+    padding-bottom: 10px;
+}
+.card p{
+    font-weight: lighter;
+    font-size: 1em;
+}
+.clock
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+}
+.clock img{
+    display: inline-block;
+    padding: 0;
+}
+.clock-time
+{
+    color: #00ff88;
+    line-height: 1;
+    font-size: 20px;
 }
 
 
