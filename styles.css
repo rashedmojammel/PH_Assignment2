@@ -64,10 +64,12 @@
     border: none;
     color: white;
     font-weight: bold;
+    
 
 }
+
 .btn-mobile{
-  display: none;        
+  display: none;      
 }
 
 /* ===============================banner1================================= */
@@ -158,6 +160,11 @@
     font-weight: bold;
     color: white;
 
+
+}
+.banner1-btn1:hover{
+    cursor: pointer;
+
 }
 
 .banner1-btn .banner1-btn2 {
@@ -171,6 +178,11 @@
     background-image: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     color: transparent;
     background-clip: text;
+   
+
+}
+.banner1-btn2:hover{
+     cursor: pointer;
 
 }
 
@@ -181,10 +193,18 @@
 
 }
 
+@keyframes myAnimation {
+  0%   { color : red; }
+  25%  { color: yellow; }
+  50%  { color: blue; }
+  100% { color: green; }
+}
+
 .banner2-content h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
-    color: white;
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: white;
+  animation: myAnimation 4s linear infinite;
 }
 
 .banner2-content p {
@@ -327,6 +347,7 @@
     height: 12em;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 
 }
 .song-playlist{
