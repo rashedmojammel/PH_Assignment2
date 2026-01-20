@@ -47,9 +47,8 @@
 }
 
 .btn1 img {
-    margin-left: 10px;
-    vertical-align: middle;
-    padding: 0;
+    padding: 0 0 0 5px;
+    
 
 }
 
@@ -61,9 +60,14 @@
     margin-top: 1.2em;
     margin-right: 10.5em;
     margin-bottom: 1.2em;
-    padding: 0.8em;
+    padding: 0.9em;
     border: none;
+    color: white;
+    font-weight: bold;
 
+}
+.btn-mobile{
+  display: none;        
 }
 
 /* ===============================banner1================================= */
@@ -98,10 +102,10 @@
     left: 330px;
     z-index: 6;
 }
-.hero-circle .hero-circle-microphone {
+.hero-circle-microphone {
     position: absolute;
-    bottom: 100px;
-    left: 200px;
+    bottom: 90px;
+    left: 205px;
     z-index: 7;
 }
 
@@ -139,6 +143,8 @@
     margin-right: 5px;
     vertical-align: middle;
     padding: 0;
+    padding-bottom: 5px;
+    padding-right: 5px;
 
 }
 
@@ -271,10 +277,23 @@
      padding: 2.5em 2.5em 0;
      
 }
-.big-vertical-layout,
-.big-horizontal-layout h3,img,p{
-    padding-bottom: 10px;
+.big-vertical-layout h3,
+.big-vertical-layout img,
+.big-vertical-layout p,
+.big-horizontal-layout h3,
+.big-horizontal-layout img,
+.big-horizontal-layout p,
+.normal-layout h3,
+.normal-layout img,
+.normal-layout p{
+  padding-bottom: 10px;
 }
+.banner1{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
 .big-vertical-layout p,
 .big-horizontal-layout p,
 .normal-layout p {
@@ -328,6 +347,7 @@
 .card h2,p{
     color: white;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 .card p{
     font-weight: lighter;
@@ -338,6 +358,7 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
+    padding-left: 10px;
 
 }
 .clock img{
@@ -388,15 +409,13 @@
 }
 .info p{
     font-weight: lighter;
-    padding-bottom: 10px;
+    padding-bottom: 1em;
 }
 .info-links img{
-    padding: 0 12px 0 0;
+    padding: 1em;
     border-style: solid;
+    border-radius: 50%;
     border-color: #533C72;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
     width: auto;
     height: auto;
 
@@ -452,4 +471,180 @@
     margin-top: 2em;
     text-align: center;
     color: white;
+}
+
+/* =========================Media screen============================ */
+@media screen and (max-width: 576px) {
+ body{
+    margin: 0;
+    max-width: 100%;
+ }
+
+  /* ---------- navbar ---------- */
+  .nav-upperContent{
+    padding: 0.8rem 1rem;
+    align-items: center;
+  }
+  .Title{
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .nav-upperContent .nav-link,
+  .btn1{
+    display: none;
+  }
+
+  .btn-mobile{
+   background: transparent;
+  border: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  }
+
+  /* ---------- banner1 (hero) ---------- */
+  .banner1{
+    min-height: auto;
+    padding: 2.5rem 1rem 1rem;
+    background-size :cover;
+     background-position: middle center;
+  }
+
+  .hero-circle{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 500px;
+  }
+  .hero-circle-microphone{
+
+    width: 2px;
+  }
+
+  .banner-content .banner1-btn{
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2.2rem;
+    margin-left: 5px;
+  }
+  /* ---------- banner2 (about) ---------- */
+  .banner2-content{
+    margin: 0 1rem 2rem 1rem;
+  }
+  .banner2-content h1{
+    font-size: 2rem;
+  }
+
+  .banner2-achivements{
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .banner2-achivements > div{
+    width: 45%;
+  }
+  .banner2-achivements h1{
+    font-size: 2rem;
+  }
+
+  /* ---------- banner3 (why choose) ---------- */
+  .banner3{
+    padding: 0 0 2.5rem 0;
+  }
+
+  .banner3-title{
+    margin-top: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .banner3-content{
+    margin: 2rem 1rem 0 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .big-vertical-layout,
+  .big-horizontal-layout,
+  .normal-layout{
+    grid-column: auto;
+    grid-row: auto;
+    padding: 1.4rem;
+    border-radius: 1.25rem;
+  }
+
+  /* ---------- featured episodes ---------- */
+  .song{
+    padding-bottom: 2rem;
+  }
+
+  .title{
+    margin-top: 2.5rem;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+  }
+
+  .song-playlist{
+    margin: 1.5rem 1rem 2.5rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .card iframe{
+    height: 11rem;
+  }
+
+  .clock-time{
+    font-size: 1rem;
+  }
+
+  /* ---------- meet the host ---------- */
+  .banner4-title{
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  .banner4-content .info{
+    margin: 0 1rem 2.5rem 1rem;
+    display: grid;
+  }
+  .banner4-info p{
+    text-align: center;
+  }
+
+  .info h2{
+    font-size: 1.4rem;
+    padding-left: 5.5em;
+  }
+  .host-png{
+    padding-left: 5.5em;
+    
+  }
+
+  .info-links {
+    padding-left: 5.5em;
+  }
+
+  /* ---------- footer ---------- */
+  .footer{
+    padding: 3rem 1rem;
+
+  }
+
+  .footer-title h1{
+    font-size: 2.5rem;
+    margin-top: 1em;
+  }
+
+  .footer .footer-links .links{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    gap : 5px;
+  }
 }
